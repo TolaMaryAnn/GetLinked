@@ -525,26 +525,26 @@ const Register = () => {
               <div className="col-span-1">
                 <Lottie animationData={congratt} />
               </div>
-              <div className="col-span-1 h-60 w-60 -ml-24">
+              <div className="col-span-1 h-40 w-40 -ml-24">
                 <Lottie animationData={congrat} />
               </div>
             </div>
             <div
-              className="text-3xl font-extrabold text-center text-white tracking-wider"
+              className="text-xl font-extrabold text-center text-white tracking-wider"
               style={{ fontFamily: "regular" }}
             >
               Congratulations <br />
               you have successfully Registered!
             </div>
             <div
-              className="text-xl mt-4 text-center text-white"
+              className="text-base mt-4 text-center text-white"
               style={{ fontFamily: "regular" }}
             >
               Yes, it was easy and you did it! <br />
               check you mail inbox for next step
             </div>
             <button
-              className="bg-[#903AFF] text-white px-52 py-2 text-base rounded-sm tracking-wider mt-4"
+              className="bg-[#903AFF] text-white px-52 py-2 text-sm rounded-sm tracking-wider mt-4"
               style={linearGradientBg}
               onClick={() => setRegistrationSuccess(false)}
             >

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from "react-router-dom"
 
 const Navr = () => {
   const linearGradientBg = {
@@ -27,9 +28,9 @@ const Navr = () => {
           <a href="#" className="text-white px-8 py-2 font-thin">
             FAQs
           </a>
-          <a href="contact" className="text-[#903AFF] px-8 py-2 font-bold">
+          <Link to="/contact" className="text-[#903AFF] px-8 py-2 font-bold">
             Contact
-          </a>
+          </Link>
           <button className="border border-[#903AFF] text-white px-8 py-2 rounded-sm">
             Register
           </button>
