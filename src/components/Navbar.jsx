@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import { RiMenu4Fill } from "react-icons/ri";
 import { FaTimes } from "react-icons/fa";
@@ -32,14 +32,14 @@ const Navbar = () => {
               <a href="/#fqa">FQAs</a>
             </li>
             <li className="text-white px-8 py-2 font-thin hover:underline hover:text-[#D434FE]">
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
 
             <button
               className="bg-[#903AFF] text-white px-8 py-2 rounded-sm transform transition-transform hover:scale-110"
               style={linearGradientBg}
             >
-              <a href="/register">Register</a>
+              <Link to="/register">Register</Link>
             </button>
           </ul>
           {/* Hamburger Icon */}
@@ -92,13 +92,13 @@ const Navbar = () => {
                   FQAs
                 </li>
               </a>
-              <a href="/contact">
+              <Link href="/contact">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Contact
                 </li>
-              </a>
+              </Link>
 
-              <a href="/register">
+              <Link to="/register">
                 <button
                   onClick={() => setNav(false)}
                   className="py-4 text-sm bg-[#903AFF] text-white px-8 py-2 rounded-sm transform transition-transform hover:scale-110"
@@ -106,7 +106,7 @@ const Navbar = () => {
                 >
                   Register
                 </button>
-              </a>
+              </Link>
             </ul>
           </div>
         </div>
