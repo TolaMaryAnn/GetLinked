@@ -92,7 +92,7 @@ const Navbar = () => {
                   FQAs
                 </li>
               </a>
-              <Link href="/contact">
+              <Link to="/contact">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Contact
                 </li>
