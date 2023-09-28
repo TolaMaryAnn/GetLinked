@@ -522,10 +522,10 @@ const Register = () => {
 
           <div className="border  border-[#903AFF] p-8 rounded-lg shadow-md relative">
             <div className="grid grid-cols-2 gap-2">
-              <div className="col-span-1">
+              <div className="col-span-1 ml-12">
                 <Lottie animationData={congratt} />
               </div>
-              <div className="col-span-1 h-40 w-40 -ml-24">
+              <div className="col-span-1 h-40 w-40 -ml-12">
                 <Lottie animationData={congrat} />
               </div>
             </div>
