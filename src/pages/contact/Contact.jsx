@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { Link } from "react-router-dom";
 import insta from "../../assets/insta.png";
 import facebook from "../../assets/facebook.png";
 import linkedin from "../../assets/linkedin.png";
@@ -205,9 +206,9 @@ const Contact = () => {
       {/* mobile screen */}
 
       <div className="md:hidden p-8">
-        <a href="/" className="text-white ">
+        <Link to="/" className="text-white ">
           <LiaLessThanSolid className=" border border-[#903AFF]  text-white h-8 w-8 rounded-full " />
-        </a>
+        </Link>
 
         <div className=" text-[#D434FE] text-2xl font-extrabold mt-8">
           Questions or need <br /> assistance? <br />
