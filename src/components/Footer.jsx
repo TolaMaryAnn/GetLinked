@@ -12,17 +12,14 @@ const Footer = () => {
   return (
     <div>
       {/* web and tablet screen */}
-      <div className="hidden md:block">
+      <div className="hidden md:block font-custom">
         <footer className="bg-[#100B20] text-white px-32 py-12">
           <div className="container mx-auto flex justify-between ">
             <div className="w-1/2">
               <div className="text-white font-extrabold text-2xl">
                 get<span className="text-[#D434FE]">linked</span>
               </div>
-              <div
-                className="text-base tracking-wider font-thin mt-4"
-                style={{ fontFamily: "regular" }}
-              >
+              <div className="text-base tracking-wider font-thin mt-4">
                 Getlinked Tech Hackathon is a technology innovation program{" "}
                 <br />
                 established by a group of organizations with the aim of
@@ -30,14 +27,11 @@ const Footer = () => {
                 young and talented individuals in the field of technology <br />
               </div>
 
-              <div
-                className="text-base tracking-wider font-bold mt-16"
-                style={{ fontFamily: "regular" }}
-              >
+              <div className="text-base tracking-wider font-bold mt-16">
                 Terms of Use/Privacy Policy
               </div>
             </div>
-            <div className="w-1/7" style={{ fontFamily: "regular" }}>
+            <div className="w-1/7">
               <div className="text-lg font-bold mb-4 text-[#D434FE]">
                 Useful Links
               </div>
@@ -79,7 +73,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/5" style={{ fontFamily: "regular" }}>
+            <div className="w-1/5">
               <div className="text-lg font-semibold mb-4 text-[#D434FE]">
                 Contact us
               </div>
@@ -131,15 +125,12 @@ const Footer = () => {
         />
       </div>
       {/* mobile screen  */}
-      <div className="md:hidden bg-[#100B20] ">
+      <div className="md:hidden bg-[#100B20] font-custom ">
         <footer className="text-white px-4 ">
           <div className="text-white font-extrabold text-2xl">
             get<span className="text-[#D434FE]">linked</span>
           </div>
-          <div
-            className="text-base tracking-wider font-thin mt-4"
-            style={{ fontFamily: "regular" }}
-          >
+          <div className="text-base tracking-wider font-thin mt-4">
             Getlinked Tech Hackathon is a technology <br /> innovation program
             established by a group <br /> of organizations with the aim of
             showcasing
@@ -147,10 +138,7 @@ const Footer = () => {
             young and talented individuals in the field of technology <br />
           </div>
 
-          <div
-            className="text-base tracking-wider font-bold mt-8"
-            style={{ fontFamily: "regular" }}
-          >
+          <div className="text-base tracking-wider font-bold mt-8">
             Terms of Use/Privacy Policy
           </div>
 
@@ -158,19 +146,19 @@ const Footer = () => {
             Useful Links
           </div>
           <ul>
-                <li>
-                  <a href="/#overview">Overview</a>
-                </li>
-                <li>
-                  <a href="/#timeline">Timeline</a>
-                </li>
-                <li>
-                  <a href="/#fqa">FAQs</a>
-                </li>
-                <li>
-                  <a href="/register">Register</a>
-                </li>
-              </ul>
+            <li>
+              <a href="/#overview">Overview</a>
+            </li>
+            <li>
+              <a href="/#timeline">Timeline</a>
+            </li>
+            <li>
+              <a href="/#fqa">FAQs</a>
+            </li>
+            <li>
+              <a href="/register">Register</a>
+            </li>
+          </ul>
           <div className="flex mt-8">
             <div className="text-right pr-4 text-[#D434FE] text-base font-bold">
               Follow us

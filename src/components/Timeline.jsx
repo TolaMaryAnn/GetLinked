@@ -10,19 +10,16 @@ const Timeline = () => {
   return (
     <div id="timeline" className=" shadow-[#D434FE] shadow-lg">
       {/* web and tablet */}
-      <div className="p-12 hidden md:block">
+      <div className="p-12 hidden md:block font-custom">
         <div className="text-center text-white text-3xl font-extrabold ">
           Timeline
         </div>
-        <div
-          className="text-center text-white text-base font-normal mt-4"
-          style={{ fontFamily: "regular" }}
-        >
+        <div className="text-center text-white text-base font-normal mt-4">
           Here is the breakdown of the time we anticipate <br />
           using for the upcoming event.
         </div>
 
-        <div style={{ fontFamily: "regular" }}>
+        <div>
           <div className="max-w-7xl mx-auto w-full grid grid-cols-9 gap-2 px-8 mt-8">
             <div className="col-span-4 w-full h-full">
               <div className="w-full h-full rounded-md p-2 md:pl-4">
@@ -220,18 +217,15 @@ const Timeline = () => {
         />
       </div>
       {/* mobile screen */}
-      <div className="p-4 md:hidden">
+      <div className="p-4 md:hidden font-custom">
         <div className="text-center text-white text-2xl font-extrabold ">
           Timeline
         </div>
-        <div
-          className="text-center text-white text-base font-normal mt-4"
-          style={{ fontFamily: "regular" }}
-        >
+        <div className="text-center text-white text-base font-normal mt-4">
           Here is the breakdown of the time we anticipate <br />
           using for the upcoming event.
         </div>
-        <div style={{ fontFamily: "regular" }}>
+        <div>
           <div className="max-w-7xl mx-auto w-full mt-8">
             <div className="flex items-start">
               <div

@@ -6,17 +6,14 @@ const RulesANDguidelines = () => {
   return (
     <div className="border-b border-gray-50  shadow-[#D434FE] shadow-lg">
       {/* web and tablet screen */}
-      <div className="hidden md:block">
+      <div className="hidden md:block font-custom">
         <div className="grid grid-cols-2 gap-4">
           <div className="mt-72 text-white px-20">
             <div className="text-3xl font-extrabold tracking-wider">
               Rules and <br />
               <span className="text-[#D434FE]">Guidelines</span>
             </div>
-            <div
-              className="mt-4 text-base font-thin"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="mt-4 text-base font-thin">
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as <br />
               clear as day: to shape the future. Whether you're a coding genius,
@@ -50,7 +47,7 @@ const RulesANDguidelines = () => {
         />
       </div>
       {/* mobile screen */}
-      <div className="md:hidden">
+      <div className="md:hidden font-custom">
         <div className="mt-4">
           <img src={Rules} alt="Idea" />
         </div>
@@ -60,10 +57,7 @@ const RulesANDguidelines = () => {
             Rules and <br />
             <span className="text-[#D434FE]">Guidelines</span>
           </div>
-          <div
-            className="mt-4 text-base font-thin tracking-wide break-words mb-8"
-            style={{ fontFamily: "regular" }}
-          >
+          <div className="mt-4 text-base font-thin tracking-wide break-words mb-8">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
             genius, a design maverick, or a concept wizard, you'll have the
@@ -80,13 +74,6 @@ const RulesANDguidelines = () => {
         />
 
         <img src={star} alt="star" className="absolute -mt-8  ml-32  w-4 h-4" />
-
-        {/* <img
-          src={starr}
-          alt="star"
-          className="absolute   w-4 h-4"
-          style={{ marginLeft: "20rem", marginTop: "-20rem" }}
-        /> */}
       </div>
     </div>
   );

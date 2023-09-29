@@ -12,13 +12,13 @@ const PartnersANDsponsors = () => {
   return (
     <div className="border-b border-gray-50  shadow-[#D434FE] shadow-lg">
       {/* web and tablet screen */}
-      <div className="p-20  hidden md:block">
+      <div className="p-20  hidden md:block font-custom">
         <div className="text-center text-white text-3xl font-extrabold ">
           Partners and Sponsors
         </div>
         <div
           className="text-center text-white text-base font-normal mt-4"
-          style={{ fontFamily: "regular" }}
+          
         >
           Getlinked Hackathon 1.0 is honored to have the following major <br />
           companies as its partners and sponsors
@@ -54,13 +54,13 @@ const PartnersANDsponsors = () => {
         />
       </div>
       {/* mobile screen */}
-      <div className="p-4 md:hidden mt-8">
+      <div className="p-4 md:hidden mt-8 font-custom">
         <div className="text-center text-white text-2xl font-extrabold ">
           Partners and Sponsors
         </div>
         <div
           className="text-center text-white text-base font-normal mt-4"
-          style={{ fontFamily: "regular" }}
+         
         >
           Getlinked Hackathon 1.0 is honored to have the following major <br />
           companies as its partners and sponsors
@@ -126,12 +126,7 @@ const PartnersANDsponsors = () => {
 
         <img src={star} alt="star" className="absolute mt-2  ml-12  w-4 h-4" />
 
-        {/* <img
-          src={starr}
-          alt="star"
-          className="absolute   w-4 h-4"
-          style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        /> */}
+       
       </div>
     </div>
   );

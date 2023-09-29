@@ -16,7 +16,7 @@ const PrizesANDrewards = () => {
   return (
     <div className=" shadow-[#D434FE] shadow-lg">
       {/* web and tablet screen */}
-      <div className="p-12 hidden md:block">
+      <div className="p-12 hidden md:block font-custom">
         <div className="grid grid-cols-2 gap-4 px-48 mt-14">
           <div className="">
             <img src={pstar} alt="star" />
@@ -27,10 +27,7 @@ const PrizesANDrewards = () => {
                 Prizes and <br />
                 <span className="text-[#903AFF]">Rewards</span>
               </div>
-              <div
-                className="text-white mt-4 tracking-wider font-base"
-                style={{ fontFamily: "regular" }}
-              >
+              <div className="text-white mt-4 tracking-wider font-base">
                 Highlights of the prizes or rewards for winners and <br /> for
                 participants
               </div>
@@ -44,10 +41,7 @@ const PrizesANDrewards = () => {
               <img src={prize} alt="prize" />
             </div>
 
-            <div
-              className="flex  gap-8 mt-48"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="flex  gap-8 mt-48">
               <div className=" rounded overflow-hidden shadow-lg px-10 py-20  border border-[#D434FE] text-center">
                 <div className="font-bold text-3xl mb-2 text-white">
                   2nd <br />
@@ -119,16 +113,13 @@ const PrizesANDrewards = () => {
       </div>
 
       {/* mobile screen */}
-      <div className="md:hidden mt-20">
+      <div className="md:hidden mt-20 font-custom">
         <div className="text-center px-4 ">
           <div className="text-2xl text-white font-extrabold ">
             Prizes and <br />
             <span className="text-[#903AFF]">Rewards</span>
           </div>
-          <div
-            className="text-white mt-2 tracking-wider font-base"
-            style={{ fontFamily: "regular" }}
-          >
+          <div className="text-white mt-2 tracking-wider font-base">
             Highlights of the prizes or rewards for winners <br /> and for
             participants
           </div>
@@ -140,11 +131,8 @@ const PrizesANDrewards = () => {
 
         <div>
           <div className="">
-            <div
-              className=" p-4  relative font-extrabold"
-              style={{ fontFamily: "regular" }}
-            >
-              <div className="flex gap-4 mt-32">
+            <div className=" p-4  relative font-extrabold">
+              <div className="flex gap-4 mt-24 mb-4">
                 <div className=" rounded overflow-hidden shadow-lg px-10 py-12 border border-[#D434FE] text-center">
                   <div className="font-bold text-xl -ml-8  mb-2 text-white">
                     2nd <br />
@@ -153,12 +141,6 @@ const PrizesANDrewards = () => {
                   <div className=" text-xl font-bold -ml-8  text-[#D434FE] mt-4">
                     #300,000
                   </div>
-                  {/* <img
-                    src={silver}
-                    alt="silver Medal"
-                    className="absolute -mt-64   h-32 w-32"
-                    style={{ marginLeft: "-3.2rem" }}
-                  /> */}
                 </div>
                 <div className=" rounded overflow-hidden shadow-lg px-10 py-12  border border-[#903AFF]">
                   <div className="font-bold text-xl mt-4 -ml-8  text-white">
@@ -168,12 +150,6 @@ const PrizesANDrewards = () => {
                   <div className=" text-xl font-bold -ml-8  text-[#D434FE] mt-4 ">
                     #400,000
                   </div>
-                  {/* <img
-                    src={gold}
-                    alt="gold Medal"
-                    className="absolute  h-40 w-40"
-                    style={{ marginLeft: "-4.2rem", marginTop: "-18rem" }}
-                  /> */}
                 </div>
                 <div className=" rounded overflow-hidden shadow-lg px-10 py-12 border border-[#D434FE] ">
                   <div className="font-bold text-xl -ml-8  mb-2 text-white">
@@ -183,12 +159,6 @@ const PrizesANDrewards = () => {
                   <div className=" text-xl font-bold -ml-8  text-[#D434FE] mt-4">
                     #150,000
                   </div>
-                  {/* <img
-                    src={bronze}
-                    alt="bronze Medal"
-                    className="absolute -mt-64   h-32 w-32"
-                    style={{ marginLeft: "-3.2rem" }}
-                  /> */}
                 </div>
               </div>
             </div>
@@ -208,13 +178,6 @@ const PrizesANDrewards = () => {
         />
 
         <img src={star} alt="star" className="absolute mt-2  ml-12  w-4 h-4" />
-
-        {/* <img
-          src={starr}
-          alt="star"
-          className="absolute   w-4 h-4"
-          style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        /> */}
       </div>
     </div>
   );

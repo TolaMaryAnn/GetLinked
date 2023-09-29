@@ -11,7 +11,7 @@ const Judgingcriteria = () => {
   return (
     <div className="border-b border-gray-50   shadow-[#D434FE] shadow-lg">
       {/* web and tablet screen */}
-      <div className="hidden md:block">
+      <div className="hidden md:block font-custom">
         <div className="grid grid-cols-2 gap-4 py-12">
           <div className="px-24 mt-48">
             <img src={judge} alt="judge" />
@@ -22,10 +22,7 @@ const Judgingcriteria = () => {
               <br />
               <span className="text-[#D434FE]">Key attributes</span>
             </div>
-            <div
-              className="mt-4 text-base font-thin tracking-wide"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="mt-4 text-base font-thin tracking-wide">
               <div>
                 <span className="text-[#FF26B9] font-extrabold">
                   Innovation and Creativity:
@@ -83,7 +80,7 @@ const Judgingcriteria = () => {
               </div>
             </div>
 
-            <div style={{ fontFamily: "regular" }}>
+            <div>
               <button
                 className="bg-[#903AFF] text-white px-8 py-2 rounded-sm mt-8"
                 style={linearGradientBg}
@@ -115,7 +112,7 @@ const Judgingcriteria = () => {
         />
       </div>
       {/* mobile screen */}
-      <div className="md:hidden">
+      <div className="md:hidden font-custom">
         <div className=" mt-20">
           <img src={judge} alt="judge" />
         </div>
@@ -126,10 +123,7 @@ const Judgingcriteria = () => {
             <br />
             <span className="text-[#D434FE]">Key attributes</span>
           </div>
-          <div
-            className="mt-4 text-base font-thin text-center"
-            style={{ fontFamily: "regular" }}
-          >
+          <div className="mt-4 text-base font-thin text-center">
             <div className="break-words">
               <span className="text-[#FF26B9] font-extrabold ">
                 Innovation and Creativity:
@@ -179,7 +173,7 @@ const Judgingcriteria = () => {
             </div>
           </div>
 
-          <div style={{ fontFamily: "regular" }}>
+          <div>
             <button
               className="bg-[#903AFF] text-white px-8 py-2 rounded-sm mt-4"
               style={linearGradientBg}
@@ -206,13 +200,6 @@ const Judgingcriteria = () => {
           alt="star"
           className="absolute -mt-12  ml-12  w-4 h-4"
         />
-        {/* 
-        <img
-          src={starr}
-          alt="star"
-          className="absolute   w-4 h-4"
-          style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        /> */}
       </div>
     </div>
   );

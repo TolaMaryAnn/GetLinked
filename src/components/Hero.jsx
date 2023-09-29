@@ -79,9 +79,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex items-center px-8">
+        <div className="flex items-center px-8 font-custom">
           <div className="w-1/2 p-4 text-white mt-20 relative">
-            <div className="text-6xl font-extrabold bold tracking-wider ">
+            <div className="text-7xl font-extrabold bold tracking-wider ">
               getlinked{" "}
               <span className="relative inline-block">
                 <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 translate-x-2">
@@ -91,7 +91,7 @@ const Hero = () => {
               </span>{" "}
               Hackathon <span className="text-[#D434FE]">1.0</span>
             </div>
-            <div style={{ fontFamily: "regular" }}>
+            <div>
               <div className="font-thin mt-4">
                 Participate in getlinked tech Hackathon 2023 stand <br /> a
                 chance to win a Big prize
@@ -146,7 +146,7 @@ const Hero = () => {
           </h1>
         </div>
 
-        <div className="text-white mt-12 relative text-center">
+        <div className="text-white mt-12 relative text-center font-custom">
           <div className="text-4xl font-extrabold bold px-4 ">
             getlinked{" "}
             <span className="relative inline-block">
@@ -157,7 +157,7 @@ const Hero = () => {
             </span>{" "}
             Hackathon <span className="text-[#D434FE]">1.0</span>
           </div>
-          <div style={{ fontFamily: "regular" }}>
+          <div>
             <div className="font-thin mt-4 text-base px-4  break-words">
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize

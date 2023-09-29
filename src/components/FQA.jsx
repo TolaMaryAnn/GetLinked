@@ -41,9 +41,12 @@ const FQA = () => {
   };
 
   return (
-    <div className="border-b border-gray-50  shadow-[#D434FE] shadow-lg" id="fqa">
+    <div
+      className="border-b border-gray-50  shadow-[#D434FE] shadow-lg"
+      id="fqa"
+    >
       {/* Web and tablet screen */}
-      <div className="hidden md:block">
+      <div className="hidden md:block font-custom">
         <div className="flex items-center px-16">
           <div className="w-1/2 px-4 p-2 mt-24">
             <img src={pstar} alt="Star" className="w-8 h-8" />
@@ -90,10 +93,7 @@ const FQA = () => {
               Frequently Ask <br />
               <span className="text-[#D434FE]">Questions</span>
             </div>
-            <div
-              className="mt-4 text-base font-thin"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="mt-4 text-base font-thin">
               We got answers to the questions that you might <br />
               want to ask about getlinked Hackathon 1.0
             </div>
@@ -103,7 +103,6 @@ const FQA = () => {
                 key={index}
                 className="cursor-pointer mt-8 "
                 onClick={() => toggleAccordion(index)}
-                style={{ fontFamily: "regular" }}
               >
                 <div className="flex justify-between items-center mt-4 ">
                   <h3 className="text-white text-base ">{faq.question}</h3>
@@ -136,25 +135,25 @@ const FQA = () => {
           src={starr}
           alt="star"
           className="absolute -mt-80   w-8 h-8"
-          style={{ marginLeft: "42rem"}}
+          style={{ marginLeft: "42rem" }}
         />
 
         <img
           src={pstar}
           alt="Pstar"
           className="absolute   w-8 h-8"
-          style={{marginTop:'-45rem',marginLeft:'68rem'}}
+          style={{ marginTop: "-45rem", marginLeft: "68rem" }}
         />
-         <img
+        <img
           src={pstar}
           alt="Pstar"
           className="absolute   w-8 h-8"
-          style={{marginTop:'-42rem' ,marginLeft:'56rem'}}
+          style={{ marginTop: "-42rem", marginLeft: "56rem" }}
         />
       </div>
 
       {/* mobile screen */}
-     <div className="md:hidden py-8">
+      <div className="md:hidden py-8 font-custom">
         <div className="w-1/2 ml-10 relative ">
           <div className="grid grid-cols-3">
             <div className="col-span-1 mt-24 ml-8 relative">
@@ -190,7 +189,6 @@ const FQA = () => {
         </div>
 
         <div className="mt-2">
-       
           <img src={fqa} alt="FQA" />
         </div>
 
@@ -199,10 +197,7 @@ const FQA = () => {
             Frequently Ask <br />
             <span className="text-[#D434FE]">Questions</span>
           </div>
-          <div
-            className="mt-2 text-base font-thin text-center"
-            style={{ fontFamily: "regular" }}
-          >
+          <div className="mt-2 text-base font-thin text-center">
             We got answers to the questions that you might <br />
             want to ask about getlinked Hackathon 1.0
           </div>
@@ -212,10 +207,9 @@ const FQA = () => {
               key={index}
               className="cursor-pointer mt-8 "
               onClick={() => toggleAccordion(index)}
-              style={{ fontFamily: "regular" }}
             >
               <div className="flex justify-between items-center mt-4 ">
-                <h3 className="text-white text-base ">{faq.question}</h3>
+                <h3 className="text-white text-sm ">{faq.question}</h3>
                 {activeIndex === index ? (
                   <FaMinus className="text-[#D434FE] text-sm" />
                 ) : (
@@ -229,27 +223,6 @@ const FQA = () => {
             </div>
           ))}
         </div>
-        {/* <img
-          src={star}
-          alt="star"
-          className="absolute ml-48   w-4 h-4"
-          style={{ marginTop: "-60rem" }}
-        />
-         <img
-          src={pstar}
-          alt="star"
-          className="absolute ml-32   w-4 h-4"
-          style={{ marginTop: "-70rem" }}
-        />
-
-        <img src={star} alt="star" className="absolute mt-2  ml-12  w-4 h-4" />
-
-        <img
-          src={starr}
-          alt="star"
-          className="absolute   w-4 h-4"
-          style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        /> */}
       </div>
     </div>
   );

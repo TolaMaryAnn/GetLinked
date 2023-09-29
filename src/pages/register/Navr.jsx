@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Navr = () => {
   const linearGradientBg = {
@@ -7,7 +7,7 @@ const Navr = () => {
   };
 
   return (
-    <nav className="px-8 py-4 items-center  hidden lg:flex ">
+    <nav className="px-8 py-4 items-center  hidden lg:flex font-custom">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <div className="text-white font-extrabold text-2xl">
@@ -15,10 +15,7 @@ const Navr = () => {
           </div>
         </div>
 
-        <div
-          className="lg:flex space-x-8 text-sm"
-          style={{ fontFamily: "Regular" }}
-        >
+        <div className="lg:flex space-x-8 text-sm">
           <a href="#" className="text-white px-8 py-2 font-thin">
             Timeline
           </a>

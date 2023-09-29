@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { RiMenu4Fill } from "react-icons/ri";
 import { FaTimes } from "react-icons/fa";
@@ -16,11 +16,11 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center w-full h-full px-8 py-6  border-b border-gray-50 ">
-        <div className="text-white font-extrabold text-2xl">
+      <div className="flex justify-between items-center w-full h-full px-8 py-6  border-b border-gray-50 font-custom">
+        <div className="text-white font-extrabold text-3xl">
           get<span className="text-[#D434FE]">linked</span>
         </div>
-        <div style={{ fontFamily: "regular" }}>
+        <div>
           <ul className="hidden md:flex">
             <li className="text-white px-8 py-2 font-thin hover:underline hover:text-[#D434FE]">
               <a href="/#timeline">Timeline</a>
@@ -75,7 +75,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="py-4 flex flex-col text-white font-[regular]]">
+          <div className="py-4 flex flex-col text-white font-custom">
             <ul>
               <a href="/#timeline">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
