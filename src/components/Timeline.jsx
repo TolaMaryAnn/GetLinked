@@ -205,19 +205,18 @@ const Timeline = () => {
           src={pstar}
           alt="Pstar"
           className="absolute   w-8 h-8"
-          style={{marginTop:'-46rem',marginLeft:'20rem'}}
+          style={{ marginTop: "-46rem", marginLeft: "20rem" }}
         />
-          <img
+        <img
           src={starr}
           alt="star"
           className="absolute -mt-20 ml-48   w-8 h-8"
-          
         />
-          <img
+        <img
           src={star}
           alt="star"
           className="absolute -mt-9    w-8 h-8"
-          style={{ marginLeft: "60rem" , marginTop:'-27rem'}}
+          style={{ marginLeft: "60rem", marginTop: "-27rem" }}
         />
       </div>
       {/* mobile screen */}
@@ -251,15 +250,15 @@ const Timeline = () => {
               </div>
 
               <div className="w-full ml-4 -mt-4">
-                <h1 className="text-[#D434FE] text-xl font-extrabold py-2">
+                <h1 className="text-[#D434FE] text-base font-extrabold py-2">
                   Hackathon Announcement
                 </h1>
-                <p className="text-gray-100  text-base">
+                <p className="text-gray-100  text-sm">
                   The getlinked tech hackathon 1.0 is formally <br /> announced
                   to the general public, and teams <br /> begin to get ready to
                   register
                 </p>
-                <div className="text-[#D434FE] text-xl font-extrabold">
+                <div className="text-[#D434FE] text-base font-extrabold">
                   November 18, 2023
                 </div>
               </div>
@@ -282,15 +281,15 @@ const Timeline = () => {
               </div>
 
               <div className="w-full ml-4 -mt-4">
-                <h1 className="text-[#D434FE] text-xl font-extrabold py-2">
+                <h1 className="text-[#D434FE] text-bse font-extrabold py-2">
                   Teams Registration begins
                 </h1>
-                <p className="text-gray-100  text-base">
+                <p className="text-gray-100  text-sm">
                   Interested teams can now show their interest <br /> in the
                   getlinked tech hackathon 1.0 2023 by <br /> proceeding to
                   register
                 </p>
-                <div className="text-[#D434FE] text-xl  font-extrabold">
+                <div className="text-[#D434FE] text-base  font-extrabold">
                   November 18, 2023
                 </div>
               </div>
@@ -313,14 +312,14 @@ const Timeline = () => {
               </div>
 
               <div className="w-full ml-4 -mt-4">
-                <h1 className="text-[#D434FE] text-xl font-extrabold py-2">
+                <h1 className="text-[#D434FE] text-base font-extrabold py-2">
                   Teams Registration ends
                 </h1>
-                <p className="text-gray-100  text-base">
+                <p className="text-gray-100  text-sm">
                   Interested Participants are no longer Allowed <br />
                   to register
                 </p>
-                <div className="text-[#D434FE] text-xl  font-extrabold">
+                <div className="text-[#D434FE] text-base  font-extrabold">
                   November 18, 2023
                 </div>
               </div>
@@ -343,15 +342,15 @@ const Timeline = () => {
               </div>
 
               <div className="w-full ml-4 -mt-4">
-                <h1 className="text-[#D434FE] text-xl font-extrabold py-2">
+                <h1 className="text-[#D434FE] text-base font-extrabold py-2">
                   Announcement of the accepted teams and ideas
                 </h1>
-                <p className="text-gray-100  text-base">
+                <p className="text-gray-100  text-sm">
                   All teams whom idea has been accepted into <br />
                   getlinked tech hackathon 1.0 2023 are formally <br />
                   announced
                 </p>
-                <div className="text-[#D434FE] text-xl  font-extrabold">
+                <div className="text-[#D434FE] text-base  font-extrabold">
                   November 18, 2023
                 </div>
               </div>
@@ -374,14 +373,14 @@ const Timeline = () => {
               </div>
 
               <div className="w-full ml-4 -mt-4">
-                <h1 className="text-[#D434FE] text-xl font-extrabold py-2">
+                <h1 className="text-[#D434FE] text-base font-extrabold py-2">
                   Getlinked Hackathon 1.0 Offically Begins
                 </h1>
-                <p className="text-gray-100  text-base">
+                <p className="text-gray-100  text-sm">
                   Accepted teams can now proceed to build <br />
                   their ground breaking skill driven solutions
                 </p>
-                <div className="text-[#D434FE] text-xl  font-extrabold">
+                <div className="text-[#D434FE] text-base  font-extrabold">
                   November 18, 2023
                 </div>
               </div>
@@ -404,15 +403,15 @@ const Timeline = () => {
               </div>
 
               <div className="w-full ml-4 -mt-4">
-                <h1 className="text-[#D434FE] text-xl font-extrabold py-2">
+                <h1 className="text-[#D434FE] text-base font-extrabold py-2">
                   Demo Day
                 </h1>
-                <p className="text-gray-100  text-base">
+                <p className="text-gray-100  text-sm">
                   Teams get the opportunity to pitch their <br />
                   projects to judges. The winner of the <br />
                   hackathon will also be announced on this day
                 </p>
-                <div className="text-[#D434FE] text-xl  font-extrabold">
+                <div className="text-[#D434FE] text-base  font-extrabold">
                   November 18, 2023
                 </div>
               </div>

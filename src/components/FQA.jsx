@@ -229,7 +229,7 @@ const FQA = () => {
             </div>
           ))}
         </div>
-        <img
+        {/* <img
           src={star}
           alt="star"
           className="absolute ml-48   w-4 h-4"
@@ -249,7 +249,7 @@ const FQA = () => {
           alt="star"
           className="absolute   w-4 h-4"
           style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        />
+        /> */}
       </div>
     </div>
   );

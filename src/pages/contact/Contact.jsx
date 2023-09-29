@@ -28,8 +28,6 @@ const Contact = () => {
     message: "",
   });
 
-  
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -45,7 +43,7 @@ const Contact = () => {
   return (
     <div>
       {/* web and tablet screen */}
-      <div className="grid grid-cols-2 gap-4 p-20 hidden md:grid ">
+      <div className="grid grid-cols-2 gap-4 p-20 py-32 hidden md:grid ">
         <div className="col-span-1">
           <div>
             <div className="text-[#D434FE] text-3xl font-extrabold">
@@ -203,35 +201,35 @@ const Contact = () => {
           </div>
         </div>
         {contactSuccess && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          {/* Dimmed overlay */}
-          <div className="fixed inset-0 bg-black opacity-80"></div>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            {/* Dimmed overlay */}
+            <div className="fixed inset-0 bg-black opacity-80"></div>
 
-          <div className="border  border-[#903AFF] p-8 rounded-lg shadow-md relative">
-            <div className="grid grid-cols-2 gap-2">
-              <div className="col-span-1">
-                <Lottie animationData={congratt} />
+            <div className="border  border-[#903AFF] p-8 rounded-lg shadow-md relative">
+              <div className="grid grid-cols-2 gap-2">
+                <div className="col-span-1">
+                  <Lottie animationData={congratt} />
+                </div>
+                <div className="col-span-1 h-60 w-60 -ml-24">
+                  <Lottie animationData={congrat} />
+                </div>
               </div>
-              <div className="col-span-1 h-60 w-60 -ml-24">
-                <Lottie animationData={congrat} />
+              <div
+                className="text-3xl font-extrabold text-center text-white tracking-wider"
+                style={{ fontFamily: "regular" }}
+              >
+                Message successfully sent!
               </div>
+              <button
+                className="bg-[#903AFF] text-white px-52 py-2 text-base rounded-sm tracking-wider mt-4"
+                style={linearGradientBg}
+                onClick={() => setContactSuccess(false)}
+              >
+                Back
+              </button>
             </div>
-            <div
-              className="text-3xl font-extrabold text-center text-white tracking-wider"
-              style={{ fontFamily: "regular" }}
-            >
-              Message successfully sent!
-            </div>
-            <button
-              className="bg-[#903AFF] text-white px-52 py-2 text-base rounded-sm tracking-wider mt-4"
-              style={linearGradientBg}
-              onClick={() => setContactSuccess(false)}
-            >
-              Back
-            </button>
           </div>
-        </div>
-      )}
+        )}
       </div>
       {/* mobile screen */}
 
@@ -308,23 +306,21 @@ const Contact = () => {
             </div>
           </form>
 
-          {/* First Star */}
+          {/*           
           <img
             src={star}
             alt="Star"
             className="absolute -mt-32 ml-80 w-4 h-4"
-            // style={{ marginLeft: "36rem" }}
-          />
+            style={{ marginLeft: "36rem" }}
+          /> */}
 
-          {/* Second Star */}
           <img
             src={starr}
             alt="Star"
-            className="absolute ml-72   w-4 h-4"
+            className="absolute ml-60   w-4 h-4"
             style={{ marginTop: "-32rem" }}
           />
 
-          {/* First Pstar */}
           <img
             src={pstar}
             alt="Pstar"
@@ -332,7 +328,6 @@ const Contact = () => {
             style={{ marginTop: "-38rem" }}
           />
 
-          {/* Second Pstar */}
           <img
             src={pstar}
             alt="Pstar"
@@ -367,37 +362,36 @@ const Contact = () => {
         </div>
 
         {contactSuccess && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          {/* Dimmed overlay */}
-          <div className="fixed inset-0 bg-black opacity-80"></div>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            {/* Dimmed overlay */}
+            <div className="fixed inset-0 bg-black opacity-80"></div>
 
-          <div className="border  border-[#903AFF] p-8 rounded-lg shadow-md relative">
-            <div className="grid grid-cols-2 gap-2">
-              <div className="col-span-1 ml-12">
-                <Lottie animationData={congratt} />
+            <div className="border  border-[#903AFF] p-8 rounded-lg shadow-md relative">
+              <div className="grid grid-cols-2 gap-2">
+                <div className="col-span-1 ml-12">
+                  <Lottie animationData={congratt} />
+                </div>
+                <div className="col-span-1 h-40 w-40 -ml-12">
+                  <Lottie animationData={congrat} />
+                </div>
               </div>
-              <div className="col-span-1 h-40 w-40 -ml-12">
-                <Lottie animationData={congrat} />
+              <div
+                className="text-xl font-extrabold text-center text-white tracking-wider"
+                style={{ fontFamily: "regular" }}
+              >
+                Message successfully sent!
               </div>
+              <button
+                className="bg-[#903AFF] text-white px-52 py-2 text-sm rounded-sm tracking-wider mt-4"
+                style={linearGradientBg}
+                onClick={() => setContactSuccess(false)}
+              >
+                Back
+              </button>
             </div>
-            <div
-              className="text-xl font-extrabold text-center text-white tracking-wider"
-              style={{ fontFamily: "regular" }}
-            >
-              Message successfully sent!
-            </div>
-            <button
-              className="bg-[#903AFF] text-white px-52 py-2 text-sm rounded-sm tracking-wider mt-4"
-              style={linearGradientBg}
-              onClick={() => setContactSuccess(false)}
-            >
-              Back
-            </button>
           </div>
-        </div>
-      )}
+        )}
       </div>
-      
     </div>
   );
 };

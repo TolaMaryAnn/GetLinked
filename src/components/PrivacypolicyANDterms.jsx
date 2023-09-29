@@ -79,11 +79,11 @@ const PrivacypolicyANDterms = () => {
             </div>
           </div>
           <div className="mt-12 relative">
-            <img src={privacy} alt="privacy" className="relative z-0" />
+            <img src={privacy} alt="privacy" className="relative z-0 ml-12" />
             <img
               src={lock}
               alt="lock"
-              className="absolute top-0 left-0 "
+              className="absolute top-8 left-0 -mt-48"
               width={1000}
               height={1000}
             />
@@ -209,12 +209,12 @@ const PrivacypolicyANDterms = () => {
             />
           </div>
         </div>
-        <img
+        {/* <img
           src={star}
           alt="star"
           className="absolute ml-80  w-4 h-4"
           style={{ marginTop: "-60rem" }}
-        />
+        /> */}
         <img
           src={pstar}
           alt="star"
@@ -224,12 +224,12 @@ const PrivacypolicyANDterms = () => {
 
         <img src={star} alt="star" className="absolute mt-2  ml-12  w-4 h-4" />
 
-        <img
+        {/* <img
           src={starr}
           alt="star"
           className="absolute   w-4 h-4"
           style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        />
+        /> */}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState }  from 'react';
-
+import { Link } from 'react-router-dom';
 const Nav = () => {
   const linearGradientBg = {
     backgroundImage: 'linear-gradient(90deg, #D434FE, #903AFF)',
@@ -27,7 +27,9 @@ const Nav = () => {
           Contact
         </a>
         <button className="bg-[#903AFF] text-white px-8 py-2 rounded-sm" style={linearGradientBg}>
+          <Link to="/register">
           Register
+          </Link>
         </button>
       </div>
 

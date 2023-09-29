@@ -206,13 +206,13 @@ const Judgingcriteria = () => {
           alt="star"
           className="absolute -mt-12  ml-12  w-4 h-4"
         />
-
+        {/* 
         <img
           src={starr}
           alt="star"
           className="absolute   w-4 h-4"
           style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        />
+        /> */}
       </div>
     </div>
   );

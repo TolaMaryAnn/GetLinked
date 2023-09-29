@@ -81,12 +81,12 @@ const RulesANDguidelines = () => {
 
         <img src={star} alt="star" className="absolute -mt-8  ml-32  w-4 h-4" />
 
-        <img
+        {/* <img
           src={starr}
           alt="star"
           className="absolute   w-4 h-4"
           style={{ marginLeft: "20rem", marginTop: "-20rem" }}
-        />
+        /> */}
       </div>
     </div>
   );

@@ -96,12 +96,12 @@ const Introduction = () => {
           style={{ marginTop: "-40rem" }}
         />
 
-        <img
+        {/* <img
           src={pstar}
           alt="Pstar"
           className="absolute  -mt-72 w-4 h-4"
           style={{ marginLeft: "21rem" }}
-        />
+        /> */}
       </div>
     </div>
   );

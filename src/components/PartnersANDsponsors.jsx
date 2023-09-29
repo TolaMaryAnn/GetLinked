@@ -121,17 +121,17 @@ const PartnersANDsponsors = () => {
           src={pstar}
           alt="star"
           className="absolute ml-32   w-4 h-4"
-          style={{ marginTop: "-70rem" }}
+          style={{ marginTop: "-45rem" }}
         />
 
         <img src={star} alt="star" className="absolute mt-2  ml-12  w-4 h-4" />
 
-        <img
+        {/* <img
           src={starr}
           alt="star"
           className="absolute   w-4 h-4"
           style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        />
+        /> */}
       </div>
     </div>
   );

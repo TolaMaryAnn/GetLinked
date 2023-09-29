@@ -144,51 +144,51 @@ const PrizesANDrewards = () => {
               className=" p-4  relative font-extrabold"
               style={{ fontFamily: "regular" }}
             >
-              <div className="flex gap-4 mt-48">
+              <div className="flex gap-4 mt-32">
                 <div className=" rounded overflow-hidden shadow-lg px-10 py-12 border border-[#D434FE] text-center">
-                  <div className="font-bold text-2xl -ml-8  mb-2 text-white">
+                  <div className="font-bold text-xl -ml-8  mb-2 text-white">
                     2nd <br />
                     Runner
                   </div>
-                  <div className=" text-2xl font-bold -ml-8  text-[#D434FE] mt-4">
+                  <div className=" text-xl font-bold -ml-8  text-[#D434FE] mt-4">
                     #300,000
                   </div>
-                  <img
+                  {/* <img
                     src={silver}
                     alt="silver Medal"
                     className="absolute -mt-64   h-32 w-32"
                     style={{ marginLeft: "-3.2rem" }}
-                  />
+                  /> */}
                 </div>
                 <div className=" rounded overflow-hidden shadow-lg px-10 py-12  border border-[#903AFF]">
-                  <div className="font-bold text-2xl mt-4 -ml-8  text-white">
+                  <div className="font-bold text-xl mt-4 -ml-8  text-white">
                     1st <br />
                     Runner
                   </div>
-                  <div className=" text-2xl font-bold -ml-8  text-[#D434FE] mt-4 ">
+                  <div className=" text-xl font-bold -ml-8  text-[#D434FE] mt-4 ">
                     #400,000
                   </div>
-                  <img
+                  {/* <img
                     src={gold}
                     alt="gold Medal"
                     className="absolute  h-40 w-40"
                     style={{ marginLeft: "-4.2rem", marginTop: "-18rem" }}
-                  />
+                  /> */}
                 </div>
                 <div className=" rounded overflow-hidden shadow-lg px-10 py-12 border border-[#D434FE] ">
-                  <div className="font-bold text-2xl -ml-8  mb-2 text-white">
+                  <div className="font-bold text-xl -ml-8  mb-2 text-white">
                     3rd <br />
                     Runner
                   </div>
-                  <div className=" text-2xl font-bold -ml-8  text-[#D434FE] mt-4">
+                  <div className=" text-xl font-bold -ml-8  text-[#D434FE] mt-4">
                     #150,000
                   </div>
-                  <img
+                  {/* <img
                     src={bronze}
                     alt="bronze Medal"
                     className="absolute -mt-64   h-32 w-32"
                     style={{ marginLeft: "-3.2rem" }}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
@@ -209,12 +209,12 @@ const PrizesANDrewards = () => {
 
         <img src={star} alt="star" className="absolute mt-2  ml-12  w-4 h-4" />
 
-        <img
+        {/* <img
           src={starr}
           alt="star"
           className="absolute   w-4 h-4"
           style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        />
+        /> */}
       </div>
     </div>
   );

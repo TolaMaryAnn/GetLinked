@@ -11,7 +11,7 @@ const Register = () => {
   const linearGradientBg = {
     backgroundImage: "linear-gradient(90deg, #D434FE, #903AFF)",
   };
-   
+
   const { register } = useContext(RegistrationContext);
 
   const [formData, setFormData] = useState({
@@ -30,13 +30,10 @@ const Register = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await register(formData, setRegistrationSuccess);
-  
-     
     } catch (error) {
       console.error("Registration error", error);
     }
@@ -87,7 +84,6 @@ const Register = () => {
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
                       style={{
                         fontFamily: "regular",
-                       
                       }}
                     ></input>
                   </div>
@@ -109,7 +105,6 @@ const Register = () => {
                       required
                       style={{
                         fontFamily: "regular",
-                        
                       }}
                     />
                   </div>
@@ -131,7 +126,6 @@ const Register = () => {
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
                       style={{
                         fontFamily: "regular",
-                      
                       }}
                     />
                   </div>
@@ -152,7 +146,6 @@ const Register = () => {
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
                       style={{
                         fontFamily: "regular",
-                        
                       }}
                     >
                       <option value="">Select</option>
@@ -178,7 +171,6 @@ const Register = () => {
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black "
                       style={{
                         fontFamily: "regular",
-                        
                       }}
                     ></input>
                   </div>
@@ -200,7 +192,6 @@ const Register = () => {
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
                       style={{
                         fontFamily: "regular",
-                        
                       }}
                     >
                       <option value="">Select your category</option>
@@ -231,7 +222,7 @@ const Register = () => {
               <button
                 className="bg-[#903AFF] text-white px-32 py-2 text-base rounded-sm tracking-wider"
                 style={linearGradientBg}
-                onClick={handleSubmit} 
+                onClick={handleSubmit}
               >
                 Submit
               </button>
@@ -265,43 +256,43 @@ const Register = () => {
           </div>
         </div>
         {registrationSuccess && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          {/* Dimmed overlay */}
-          <div className="fixed inset-0 bg-black opacity-80"></div>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            {/* Dimmed overlay */}
+            <div className="fixed inset-0 bg-black opacity-80"></div>
 
-          <div className="border  border-[#903AFF] p-8 rounded-lg shadow-md relative">
-            <div className="grid grid-cols-2 gap-2">
-              <div className="col-span-1">
-                <Lottie animationData={congratt} />
+            <div className="border  border-[#903AFF] p-8 rounded-lg shadow-md relative">
+              <div className="grid grid-cols-2 gap-2">
+                <div className="col-span-1">
+                  <Lottie animationData={congratt} />
+                </div>
+                <div className="col-span-1 h-60 w-60 -ml-24">
+                  <Lottie animationData={congrat} />
+                </div>
               </div>
-              <div className="col-span-1 h-60 w-60 -ml-24">
-                <Lottie animationData={congrat} />
+              <div
+                className="text-3xl font-extrabold text-center text-white tracking-wider"
+                style={{ fontFamily: "regular" }}
+              >
+                Congratulations <br />
+                you have successfully Registered!
               </div>
+              <div
+                className="text-xl mt-4 text-center text-white"
+                style={{ fontFamily: "regular" }}
+              >
+                Yes, it was easy and you did it! <br />
+                check you mail inbox for next step
+              </div>
+              <button
+                className="bg-[#903AFF] text-white px-52 py-2 text-base rounded-sm tracking-wider mt-4"
+                style={linearGradientBg}
+                onClick={() => setRegistrationSuccess(false)}
+              >
+                Back
+              </button>
             </div>
-            <div
-              className="text-3xl font-extrabold text-center text-white tracking-wider"
-              style={{ fontFamily: "regular" }}
-            >
-              Congratulations <br />
-              you have successfully Registered!
-            </div>
-            <div
-              className="text-xl mt-4 text-center text-white"
-              style={{ fontFamily: "regular" }}
-            >
-              Yes, it was easy and you did it! <br />
-              check you mail inbox for next step
-            </div>
-            <button
-              className="bg-[#903AFF] text-white px-52 py-2 text-base rounded-sm tracking-wider mt-4"
-              style={linearGradientBg}
-              onClick={() => setRegistrationSuccess(false)}
-            >
-              Back
-            </button>
           </div>
-        </div>
-      )}
+        )}
       </div>
       {/* mobile screen */}
       <div className="md:hidden p-8">
@@ -461,29 +452,27 @@ const Register = () => {
             </div>
           </div>
         </form>
-        {/* First Star */}
-        <img
+
+        {/* <img
           src={star}
           alt="Star"
           className="absolute -mt-32 ml-80 w-4 h-4"
-          // style={{ marginLeft: "36rem" }}
-        />
+          style={{ marginLeft: "36rem" }}
+        /> */}
 
-        {/* Second Star */}
-        <img
+        {/* <img
           src={star}
           alt="Star"
-          className="absolute ml-72   w-4 h-4"
+          className="absolute ml-12   w-4 h-4"
           style={{ marginTop: "-32rem" }}
-        />
+        /> */}
 
-        {/* First Pstar */}
-        <img
+        {/* <img
           src={pstar}
           alt="Pstar"
           className="absolute ml-72   w-4 h-4"
           style={{ marginTop: "-50rem" }}
-        />
+        /> */}
 
         {/* Second Pstar */}
         <img
@@ -508,53 +497,52 @@ const Register = () => {
           </label>
         </div>
         <button
-          className="bg-[#903AFF] text-white px-32 py-2 text-base rounded-sm tracking-wider "
+          className="bg-[#903AFF] text-white px-24 py-2 text-base rounded-sm tracking-wider "
           style={linearGradientBg}
           onClick={handleSubmit}
         >
           Submit
         </button>
 
-      {registrationSuccess && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          {/* Dimmed overlay */}
-          <div className="fixed inset-0 bg-black opacity-80"></div>
+        {registrationSuccess && (
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            {/* Dimmed overlay */}
+            <div className="fixed inset-0 bg-black opacity-80"></div>
 
-          <div className="border  border-[#903AFF] p-8 rounded-lg shadow-md relative">
-            <div className="grid grid-cols-2 gap-2">
-              <div className="col-span-1 ml-12">
-                <Lottie animationData={congratt} />
+            <div className="border  border-[#903AFF] p-8 rounded-lg shadow-md relative">
+              <div className="grid grid-cols-2 gap-2">
+                <div className="col-span-1 ml-12">
+                  <Lottie animationData={congratt} />
+                </div>
+                <div className="col-span-1 h-40 w-40 -ml-12">
+                  <Lottie animationData={congrat} />
+                </div>
               </div>
-              <div className="col-span-1 h-40 w-40 -ml-12">
-                <Lottie animationData={congrat} />
+              <div
+                className="text-xl font-extrabold text-center text-white tracking-wider"
+                style={{ fontFamily: "regular" }}
+              >
+                Congratulations <br />
+                you have successfully Registered!
               </div>
+              <div
+                className="text-base mt-4 text-center text-white"
+                style={{ fontFamily: "regular" }}
+              >
+                Yes, it was easy and you did it! <br />
+                check you mail inbox for next step
+              </div>
+              <button
+                className="bg-[#903AFF] text-white px-52 py-2 text-sm rounded-sm tracking-wider mt-4"
+                style={linearGradientBg}
+                onClick={() => setRegistrationSuccess(false)}
+              >
+                Back
+              </button>
             </div>
-            <div
-              className="text-xl font-extrabold text-center text-white tracking-wider"
-              style={{ fontFamily: "regular" }}
-            >
-              Congratulations <br />
-              you have successfully Registered!
-            </div>
-            <div
-              className="text-base mt-4 text-center text-white"
-              style={{ fontFamily: "regular" }}
-            >
-              Yes, it was easy and you did it! <br />
-              check you mail inbox for next step
-            </div>
-            <button
-              className="bg-[#903AFF] text-white px-52 py-2 text-sm rounded-sm tracking-wider mt-4"
-              style={linearGradientBg}
-              onClick={() => setRegistrationSuccess(false)}
-            >
-              Back
-            </button>
           </div>
-        </div>
-      )}
+        )}
       </div>
-
     </div>
   );
 };
