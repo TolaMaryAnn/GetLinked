@@ -41,7 +41,7 @@ const Register = () => {
   return (
     <div>
       {/* web and tablet */}
-      <div className="grid grid-cols-2 gap-4 p-4 relative hidden md:grid">
+      <div className="grid grid-cols-2 gap-4 p-4 relative hidden md:grid font-custom">
         <div className="col-span-1">
           <img src={reg} alt="registration" />
         </div>
@@ -51,20 +51,14 @@ const Register = () => {
             <div className="text-[#D434FE] text-3xl font-extrabold">
               Register
             </div>
-            <div
-              className="text-white text-base mt-8"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="text-white text-base mt-8">
               Be part of this movement!
             </div>
-            <div
-              className="text-white text-3xl font-thin mt-4"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="text-white text-3xl font-thin mt-4">
               CREATE YOUR ACCOUNT
             </div>
 
-            <div className="text-white mt-4" style={{ fontFamily: "regular" }}>
+            <div className="text-white mt-4">
               <form>
                 <div className="grid grid-cols-1 gap-4  md:grid-cols-2">
                   <div>
@@ -82,9 +76,6 @@ const Register = () => {
                       onChange={handleChange}
                       placeholder="Enter your email address"
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
-                      style={{
-                        fontFamily: "regular",
-                      }}
                     ></input>
                   </div>
                   <div>
@@ -103,9 +94,6 @@ const Register = () => {
                       onChange={handleChange}
                       placeholder="Enter your phone number"
                       required
-                      style={{
-                        fontFamily: "regular",
-                      }}
                     />
                   </div>
                   <div>
@@ -124,9 +112,6 @@ const Register = () => {
                       onChange={handleChange}
                       placeholder="Enter the name of your group"
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
-                      style={{
-                        fontFamily: "regular",
-                      }}
                     />
                   </div>
                   <div>
@@ -144,9 +129,6 @@ const Register = () => {
                       value={formData.group_size}
                       onChange={handleChange}
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
-                      style={{
-                        fontFamily: "regular",
-                      }}
                     >
                       <option value="">Select</option>
                       <option value="1">1</option>
@@ -169,9 +151,6 @@ const Register = () => {
                       onChange={handleChange}
                       placeholder="What is your group project topic"
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black "
-                      style={{
-                        fontFamily: "regular",
-                      }}
                     ></input>
                   </div>
 
@@ -190,9 +169,6 @@ const Register = () => {
                       value={formData.category}
                       onChange={handleChange}
                       className="px-8 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
-                      style={{
-                        fontFamily: "regular",
-                      }}
                     >
                       <option value="">Select your category</option>
                       <option value="1">Category 1</option>
@@ -295,23 +271,17 @@ const Register = () => {
         )}
       </div>
       {/* mobile screen */}
-      <div className="md:hidden p-8">
+      <div className="md:hidden p-8 font-custom">
         <div className="text-2xl text-[#D434FE] font-extrabold ">Register</div>
 
         <div className="mt-4">
           <img src={reg} alt="registration" />
         </div>
         <div className="text-center">
-          <div
-            className="text-white text-base mt-4"
-            style={{ fontFamily: "regular" }}
-          >
+          <div className="text-white text-base mt-4">
             Be part of this movement!
           </div>
-          <div
-            className="text-white text-2xl font-thin mt-2"
-            style={{ fontFamily: "regular" }}
-          >
+          <div className="text-white text-2xl font-thin mt-2">
             CREATE YOUR ACCOUNT
           </div>
         </div>
@@ -333,9 +303,6 @@ const Register = () => {
                 onChange={handleChange}
                 placeholder="Enter your email address"
                 className="px-4 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
-                style={{
-                  fontFamily: "regular",
-                }}
               ></input>
             </div>
             <div>
@@ -353,9 +320,6 @@ const Register = () => {
                 onChange={handleChange}
                 placeholder="Enter your phone number"
                 required
-                style={{
-                  fontFamily: "regular",
-                }}
               />
             </div>
             <div>
@@ -371,9 +335,6 @@ const Register = () => {
                 onChange={handleChange}
                 placeholder="Enter the name of your group"
                 className="px-4 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black "
-                style={{
-                  fontFamily: "regular",
-                }}
               />
             </div>
 
@@ -392,9 +353,6 @@ const Register = () => {
                 value={formData.group_size}
                 onChange={handleChange}
                 className="px-4 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
-                style={{
-                  fontFamily: "regular",
-                }}
               >
                 <option value="">Select</option>
                 <option value="1">10</option>
@@ -418,9 +376,6 @@ const Register = () => {
                 onChange={handleChange}
                 placeholder="What is your group project topic"
                 className="px-4 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black "
-                style={{
-                  fontFamily: "regular",
-                }}
               ></input>
             </div>
             <div className="">
@@ -439,9 +394,6 @@ const Register = () => {
                   value={formData.category}
                   onChange={handleChange}
                   className="px-4 py-2 w-full mt-4 border border-white rounded focus:outline-none focus:ring focus:border-[#D434FE] text-black"
-                  style={{
-                    fontFamily: "regular",
-                  }}
                 >
                   <option value="">Select your category</option>
                   <option value="1">Category 1</option>
@@ -453,28 +405,6 @@ const Register = () => {
           </div>
         </form>
 
-        {/* <img
-          src={star}
-          alt="Star"
-          className="absolute -mt-32 ml-80 w-4 h-4"
-          style={{ marginLeft: "36rem" }}
-        /> */}
-
-        {/* <img
-          src={star}
-          alt="Star"
-          className="absolute ml-12   w-4 h-4"
-          style={{ marginTop: "-32rem" }}
-        /> */}
-
-        {/* <img
-          src={pstar}
-          alt="Pstar"
-          className="absolute ml-72   w-4 h-4"
-          style={{ marginTop: "-50rem" }}
-        /> */}
-
-        {/* Second Pstar */}
         <img
           src={pstar}
           alt="Pstar"

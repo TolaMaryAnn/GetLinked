@@ -11,7 +11,7 @@ const PrivacypolicyANDterms = () => {
   return (
     <div>
       {/* web and tablet screen */}
-      <div className="hidden md:block py-32">
+      <div className="hidden md:block py-32 font-custom">
         <div className="grid grid-cols-2 gap-4 relative">
           <div className="mt-32 text-white px-20 relative z-10">
             <div className="text-3xl font-extrabold tracking-wider">
@@ -20,13 +20,13 @@ const PrivacypolicyANDterms = () => {
             </div>
             <div
               className="mt-4 text-base font-thin text-gray-400"
-              style={{ fontFamily: "regular" }}
+              
             >
               Last updated on September 12, 2023
             </div>
             <div
               className="mt-4 text-base font-thin text-white"
-              style={{ fontFamily: "regular" }}
+              
             >
               Below are our privacy & policy, which outline a lot of goodies.{" "}
               <br />
@@ -35,7 +35,7 @@ const PrivacypolicyANDterms = () => {
 
             <div
               className="mt-8  border rounded border-[#D434FE] p-12"
-              style={{ fontFamily: "regular" }}
+              
             >
               <div className=" font-thin text-base tracking-wider">
                 At getlinked tech Hackathon 1.0, we value your privacy <br />
@@ -135,7 +135,7 @@ const PrivacypolicyANDterms = () => {
         />
       </div>
       {/* mobile screen */}
-      <div className="md:hidden py-8">
+      <div className="md:hidden py-8 font-custom">
         <div className="mt-4 text-white px-4 relative z-10">
           <div className="text-2xl text-center font-extrabold ">
             Privacy Policy and <br />
@@ -143,13 +143,13 @@ const PrivacypolicyANDterms = () => {
           </div>
           <div
             className="mt-2 text-base font-thin text-gray-400 text-center"
-            style={{ fontFamily: "regular" }}
+            
           >
             Last updated on September 12, 2023
           </div>
           <div
             className="mt-4 text-base font-thin text-center text-white"
-            style={{ fontFamily: "regular" }}
+           
           >
             Below are our privacy & policy, which outline a <br /> lot of
             goodies. it’s our aim to always take care of our <br />{" "}
@@ -158,7 +158,7 @@ const PrivacypolicyANDterms = () => {
 
           <div
             className="mt-8  border rounded border-[#D434FE] p-8 "
-            style={{ fontFamily: "regular" }}
+            
           >
             <div className=" font-thin text-base tracking-wider break-words text-center">
               At getlinked tech Hackathon 1.0, we value your privacy and are
@@ -209,12 +209,7 @@ const PrivacypolicyANDterms = () => {
             />
           </div>
         </div>
-        {/* <img
-          src={star}
-          alt="star"
-          className="absolute ml-80  w-4 h-4"
-          style={{ marginTop: "-60rem" }}
-        /> */}
+        
         <img
           src={pstar}
           alt="star"
@@ -224,12 +219,6 @@ const PrivacypolicyANDterms = () => {
 
         <img src={star} alt="star" className="absolute mt-2  ml-12  w-4 h-4" />
 
-        {/* <img
-          src={starr}
-          alt="star"
-          className="absolute   w-4 h-4"
-          style={{ marginLeft: "20rem", marginTop: "-38rem" }}
-        /> */}
       </div>
     </div>
   );

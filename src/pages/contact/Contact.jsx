@@ -43,38 +43,26 @@ const Contact = () => {
   return (
     <div>
       {/* web and tablet screen */}
-      <div className="grid grid-cols-2 gap-4 p-20 py-32 hidden md:grid ">
+      <div className="grid grid-cols-2 gap-4 p-20 py-32 hidden md:grid font-custom">
         <div className="col-span-1">
           <div>
             <div className="text-[#D434FE] text-3xl font-extrabold">
               Get in touch
             </div>
-            <div
-              className="mt-4 text-white font-base font-thin"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="mt-4 text-white font-base font-thin">
               Contact <br />
               Information
             </div>
-            <div
-              className="mt-4 text-white font-base font-thin"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="mt-4 text-white font-base font-thin">
               27,Alara Street <br />
               Yaba 100012 <br />
               Lagos State
             </div>
-            <div
-              className="mt-4 text-white font-base font-thin"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="mt-4 text-white font-base font-thin">
               we are open from Monday-Friday <br />
               08:00am - 05:00pm
             </div>
-            <div
-              className="mt-6 text-[#D434FE] font-base font-bold"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="mt-6 text-[#D434FE] font-base font-bold">
               Share on
             </div>
 
@@ -108,7 +96,7 @@ const Contact = () => {
               Let us know about it!
             </div>
 
-            <div className="" style={{ fontFamily: "regular" }}>
+            <div>
               <form onSubmit={handleSubmit}>
                 <div className="mb-4 mt-4">
                   <input
@@ -123,7 +111,7 @@ const Contact = () => {
                 </div>
                 <div className=" mt-4">
                   <input
-                    type="number"
+                    type="text"
                     id="phone_number"
                     name="phone_number"
                     placeholder="Phone"
@@ -233,7 +221,7 @@ const Contact = () => {
       </div>
       {/* mobile screen */}
 
-      <div className="md:hidden p-8">
+      <div className="md:hidden p-8 font-custom">
         <Link to="/" className="text-white ">
           <LiaLessThanSolid className=" border border-[#903AFF]  text-white h-8 w-8 rounded-full " />
         </Link>
@@ -247,7 +235,7 @@ const Contact = () => {
           Email us below to any question related <br />
           to our event
         </div>
-        <div className="" style={{ fontFamily: "regular" }}>
+        <div className="">
           <form onSubmit={handleSubmit}>
             <div className="mb-4 mt-4">
               <input
@@ -262,7 +250,7 @@ const Contact = () => {
             </div>
             <div className=" mt-4">
               <input
-                type="number"
+                type="text"
                 id="phone_number"
                 name="phone_number"
                 placeholder="Phone"
@@ -305,14 +293,6 @@ const Contact = () => {
               </button>
             </div>
           </form>
-
-          {/*           
-          <img
-            src={star}
-            alt="Star"
-            className="absolute -mt-32 ml-80 w-4 h-4"
-            style={{ marginLeft: "36rem" }}
-          /> */}
 
           <img
             src={starr}

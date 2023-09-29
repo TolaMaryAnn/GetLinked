@@ -13,7 +13,7 @@ const Introduction = () => {
       id="overview"
     >
       {/* web and tablet screen */}
-      <div className="py-12 relative  hidden md:block">
+      <div className="py-12 relative  hidden md:block font-custom">
         <div className="grid grid-cols-2 gap-4">
           <div className="px-24 mt-12">
             <img src={idea} alt="Idea" />
@@ -23,10 +23,7 @@ const Introduction = () => {
               Introduction to getlinked <br />
               <span className="text-[#D434FE]">tech Hackathon 1.0</span>
             </div>
-            <div
-              className="mt-4 text-base font-thin tracking-wide"
-              style={{ fontFamily: "regular" }}
-            >
+            <div className="mt-4 text-base font-thin tracking-wide">
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as <br />
               clear as day: to shape the future. Whether you're a coding genius,
@@ -62,7 +59,7 @@ const Introduction = () => {
         />
       </div>
       {/* mobile screen */}
-      <div className="md:hidden">
+      <div className="md:hidden font-custom">
         <div className="px-6 mt-4">
           <img src={idea} alt="Idea" />
         </div>
@@ -77,10 +74,7 @@ const Introduction = () => {
             Introduction to getlinked <br />
             <span className="text-[#D434FE]">tech Hackathon 1.0</span>
           </div>
-          <div
-            className="mt-4 text-base font-thin break-words mb-14"
-            style={{ fontFamily: "regular" }}
-          >
+          <div className="mt-4 text-base font-thin break-words mb-14">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
             genius, a design maverick, or a concept wizard, you'll have the
@@ -95,13 +89,6 @@ const Introduction = () => {
           className="absolute  ml-8   w-4 h-4"
           style={{ marginTop: "-40rem" }}
         />
-
-        {/* <img
-          src={pstar}
-          alt="Pstar"
-          className="absolute  -mt-72 w-4 h-4"
-          style={{ marginLeft: "21rem" }}
-        /> */}
       </div>
     </div>
   );
